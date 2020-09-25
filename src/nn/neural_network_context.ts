@@ -23,6 +23,11 @@ export interface NeuralNetworkContext {
   constant(value: number, type: OperandType): Operand;
 
   /**
+   * [spec](https://webmachinelearning.github.io/webnn/#api-neuralnetworkcontext-binary)
+   */
+  add(a: Operand, b: Operand): Operand;
+
+  /**
    * [spec](https://webmachinelearning.github.io/webnn/#api-neuralnetworkcontext-pool2d)
    */
   averagePool2d(

@@ -7,6 +7,7 @@ import {Operand} from './operand';
 import {OperandDescriptor} from './operand_descriptor';
 import {OperandLayout} from './operand_layout';
 import {OperandType} from './operand_type';
+import {Add} from './ops/add';
 import {AveragePool2d} from './ops/average_pool2d';
 import {Conv2d} from './ops/conv2d';
 import {MatMul} from './ops/matmul';
@@ -37,6 +38,10 @@ export class NeuralNetworkContext implements NeuralNetworkContextInterface {
     } else {
       return Constant.createTensor(descOrValue, valueOrType as TypedArray);
     }
+  }
+
+  add(a: Operand, b: Operand): Operand {
+    return (new Add(a, b)).output;
   }
 
   averagePool2d(
