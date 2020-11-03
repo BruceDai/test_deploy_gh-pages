@@ -1,3 +1,6 @@
+[![build and test](https://github.com/BruceDai/test_deploy_gh-pages/workflows/build%20and%20test/badge.svg)](https://github.com/BruceDai/test_deploy_gh-pages/actions)
+[![deploy](https://github.com/BruceDai/test_deploy_gh-pages/workflows/deploy/badge.svg)](https://github.com/BruceDai/test_deploy_gh-pages/actions)
+
 # WebNN Polyfill
 
 A JavaScript implementation of the [Web Neural Network API](https://webmachinelearning.github.io/webnn/).
